@@ -33,10 +33,10 @@ wage_and_happiness = wage.merge(happiness)
 wage_and_happiness_by_country = wage_and_happiness.groupby("Country")
 
 #average by wage scores
-wage_average_by_country = wage_and_happiness_by_country["Wage"].mean()
+wage_average_by_country = wage_and_happiness_by_country["Value"].mean()
 
 #average by happiness scores
-happiness_average_by_country = wage_and_happiness_by_country["Happiness Score"].mean()
+happiness_average_by_country = wage_and_happiness_by_country["Happiness score"].mean()
 
 #print top 10 average of wage scores by country
 print(f"Countries with largest average wages: {wage_average_by_country}".nlargest(10))
