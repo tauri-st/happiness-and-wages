@@ -22,3 +22,6 @@ def format_currency(dataset):
 # Pandas dataframes
 wage = pd.read_csv("wage.csv", delimiter = ",")
 happiness = pd.read_csv("happiness.csv", delimiter = ",")
+
+#pass the wage data to be converted to USD
+wage_usd = format_currency(wage)
