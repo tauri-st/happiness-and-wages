@@ -32,3 +32,9 @@ wage_and_happiness = wage.merge(happiness)
 #group the data by country
 wage_and_happiness_by_country = wage_and_happiness.groupby("Country")
 
+#average by wage scores
+wage_average_by_country = wage_and_happiness_by_country["Wage"].mean()
+
+#average by happiness scores
+happiness_average_by_country = wage_and_happiness_by_country["Happiness Score"].mean()
+
