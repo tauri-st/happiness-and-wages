@@ -25,3 +25,10 @@ happiness = pd.read_csv("happiness.csv", delimiter = ",")
 
 #pass the wage data to be converted to USD
 wage_usd = format_currency(wage)
+
+#merge the wage and happiness data into one dataframe
+wage_and_happiness = wage.merge(happiness)
+
+#group the data by country
+wage_and_happiness_by_country = wage_and_happiness.groupby("Country")
+
