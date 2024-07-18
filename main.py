@@ -41,3 +41,10 @@ wage_average_by_country = wage_and_happiness_by_country["Value"].mean()
 happiness_average_by_country = wage_and_happiness_by_country["Happiness score"].mean()
 
 fig = sns.scatterplot(data=wage_and_happiness, x="Value", y="Happiness score", hue="Happiness score", size="Happiness score", sizes=(20, 180))
+
+plt.title = "Annual Salary and Happiness"
+
+plt.xlabel("Annual Salary of Full-Time Workers (USD)", fontsize=14)
+plt.ylabel("Happiness Scores of Citizens", fontsize=14)
+
+plt.savefig("salary_and_happiness.png")
